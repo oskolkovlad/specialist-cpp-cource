@@ -19,20 +19,20 @@ int GetDayUpperBound(int month, int year)
 
     switch (month)
     {
-    case 2:
-        value = IsYearLeap(year) ? 29 : 28;
-        break;
+        case 2:
+            value = IsYearLeap(year) ? 29 : 28;
+            break;
 
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-        value = 30;
-        break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            value = 30;
+            break;
 
-    default:
-        value = 31;
-        break;
+        default:
+            value = 31;
+            break;
     }
 
     return value;
@@ -43,7 +43,7 @@ void Set(Date& item, int day, int month, int year)
     // Валидацию добавил, так как по ТЗ. Но закомментировал, так как тоже самое реализовал при чтении.
 
     // Предположим, что допустимый диапазон значений от 1 до 2500.
-    if (year >= 1 && year <= 2500)
+    //if (year >= 1 && year <= 2500)
         item.Year = year;
 
     //if (month >= 1 && month <= 12)
