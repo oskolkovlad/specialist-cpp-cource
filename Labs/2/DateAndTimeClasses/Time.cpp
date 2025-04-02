@@ -30,15 +30,13 @@ int Time::CompareTo(const Time& item) const {
 
 void Time::Set(int hour, int minute, int second)
 {
-    // Валидацию добавил, так как по ТЗ. Но закомментировал, так как тоже самое реализовал при чтении.
-
-    //if (hour >= 0 && hour <= 23)
+    if (hour >= 0 && hour <= 23)
         Hour = hour;
 
-    //if (minute >= 0 && minute <= 59)
+    if (minute >= 0 && minute <= 59)
         Minute = minute;
 
-    //if (second >= 0 && second <= 59)
+    if (second >= 0 && second <= 59)
         Second = second;
 }
 

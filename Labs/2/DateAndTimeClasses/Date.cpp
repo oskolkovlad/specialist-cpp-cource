@@ -59,16 +59,14 @@ int Date::CompareTo(const Date& item) const {
 
 void Date::Set(int day, int month, int year)
 {
-    // Валидацию добавил, так как по ТЗ. Но закомментировал, так как тоже самое реализовал при чтении.
-
     // Предположим, что допустимый диапазон значений от 1 до 2500.
-    //if (year >= 1 && year <= 2500)
+    if (year >= 1 && year <= 2500)
         Year = year;
 
-    //if (month >= 1 && month <= 12)
+    if (month >= 1 && month <= 12)
         Month = month;
 
-    //if (day >= 1 && day <= GetDayUpperBound(month, year))
+    if (day >= 1 && day <= GetDayUpperBound(month, year))
         Day = day;
 }
 
