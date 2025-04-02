@@ -52,7 +52,7 @@ inline void CheckDate()
         cout << "; ";
     }
 
-    cout << endl << endl;
+    cout << endl << endl << endl;
 
     delete datePointer1;
     delete datePointer2;
@@ -106,7 +106,7 @@ inline void CheckTime()
         cout << "; ";
     }
 
-    cout << endl << endl;
+    cout << endl << endl << endl;
 
     delete timePointer1;
     delete timePointer2;
