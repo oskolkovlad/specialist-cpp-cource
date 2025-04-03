@@ -36,7 +36,6 @@ public:
     inline bool Less(const Time& item) const { return CompareTo(item) == -1; }
     inline bool Greater(const Time& item) const { return CompareTo(item) == 1; }
 
-
     friend int CompareTimes(const void* item1, const void* item2);
 };
 
