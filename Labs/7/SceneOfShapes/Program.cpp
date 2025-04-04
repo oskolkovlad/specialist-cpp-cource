@@ -31,14 +31,13 @@ int main()
     scene->AddShape(point);
     scene->AddShape(circle1);
     scene->AddShape(circle2);
+    scene->Scale(2.5);
+    scene->MoveBy(5, 10);
     scene->Draw();
 
     cout << endl;
 
     //***//
     
-   /* delete point;
-    delete circle1;
-    delete circle2;*/
     delete scene;
 }

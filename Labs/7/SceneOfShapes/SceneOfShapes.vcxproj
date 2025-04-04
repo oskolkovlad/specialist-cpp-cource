@@ -135,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Coordinates.h" />
+    <ClInclude Include="IMoveable.h" />
+    <ClInclude Include="IScaleable.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Shape.h" />

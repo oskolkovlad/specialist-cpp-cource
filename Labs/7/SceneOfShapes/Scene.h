@@ -1,10 +1,11 @@
 #pragma once
 
 #include "Shape.h"
+#include "IScaleable.h"
 
 const int MAX_SCENE_SIZE = 10;
 
-class Scene
+class Scene : public IScaleable
 {
 private:
 	int _currentIndex;
@@ -26,5 +27,8 @@ public:
 
 	bool AddShape(const Shape* item);
 	void Clear();
+
 	void Draw() const;
+	void Scale(double factor) override;
+	void MoveBy(int dX, int dY);
 };
